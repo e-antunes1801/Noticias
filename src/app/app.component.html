@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias Cidade - Seu site de notícias</title>
+  <link rel="stylesheet" type="text/css" href="app.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="../webapi.json"> </script>
+</head>
+<body id="trescolunas" class="home">
+  <!--inicio container-->
+  <div id="container">
+    <!--inicio topo-->
+    <nav
+     id="topo">
+      <h1 class="logo">Notícias Cidade</h1>
+      <ul id="navegacao">
+        <li><a id="home" href="index.html">Home</a></li>
+        <li><a id="brasil" href="brasil.html">Brasil</a></li>
+        <li><a id="mundo" href="mundo.html">Mundo</a></li>
+        <li><a id="economia" href="economia.html">Economia</a></li>
+        <li><a id="saude" href="saude.html">Saúde</a></li>
+        <li><a id="ciencia" href="ciencia.html">Ciência</a></li>
+        <li><a id="fotos" href="fotos.html">Fotos</a></li>
+      </ul>
+    </nav>
+    <!--fim topo-->
+    <!--inicio conteudo-->
+    <div id="conteudo">
+      <div id="primario">
+        <div class="caixa">
+          <h2>Mundo</h2>
+          <div class="caixa-conteudo">
+            <ul id="lista-noticias">
+              <li>
+                <a href="">
+                  <img src="../assets/imagens/tecnologia.jpg" width="80">
+                  <h3>Novas Tecnologias!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../assets/imagens/tecnologia.jpg" width="80">
+                  <h3>Novas Tecnologias!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../assets/imagens/tecnologia.jpg" width="80">
+                  <h3>Novas Tecnologias!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../assets/imagens/tecnologia.jpg" width="80">
+                  <h3>Novas Tecnologias!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="secundario">
+        <div class="caixa">
+          <h2>Notícias Recentes</h2>
+          <div class="caixa-conteudo">
+            <ul id="lista-noticias">
+              <li>
+                <a href="">
+                  <img src="../assets/imagens/cidade.jpg" width="80">
+                  <h3>Novas Tecnologias!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../assets/imagens/taxi.jpg" width="80">
+                  <h3>Novas Tecnologias!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../assets/imagens/tecnologia.jpg" width="80">
+                  <h3>Novas Tecnologias!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="../assets/imagens/doutor.jpg" width="80">
+                  <h3>Novas Tecnologias!</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav id="lateral">
+          <div class="caixa">
+              <h2>Entrevistas</h2>
+              <div class="caixa-conteudo">
+                  <ul>
+                      <li><a href="">Brasil</a></li>
+                      <li><a href="">Mundo</a></li>
+                      <li><a href="">Economia</a></li>
+                      <li><a href="">Saúde</a></li>
+                      <li><a href="">Ciência</a></li>
+                      <li><a href="">Fotos</a></li>
+                  </ul>
+                  <div>
+                    <label for="pesquisa">Pesquise aqui!</label>
+                      <input type="search" name="pesquisa" placeholder="">
+                  </div>
+                  <div>
+                    <input class="submit" type="submit" value="Buscar">
+                </div>
+              </div>
+          </div>
+      </nav>
+    </div>
+    <!--fim conteudo-->
+  </div>
+  <!--fim container-->
+  <footer>
+  </footer>
+</body>
+
+<router-outlet></router-outlet>
